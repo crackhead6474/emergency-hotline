@@ -14,29 +14,29 @@
     <header>
         <nav class="flex justify-between items-center">
             <div class="flex items-center max-w-[196px] max-h=[50px]">
-                <img src="/assets/logo.png" alt="Banner Logo" class="max-w-[50px] max-h-[50px]" />
+                <img src="./assets/logo.png" alt="Banner Logo" class="max-w-[50px] max-h-[50px]" />
                 <a class="text-[#006747] text-3xl  max-w-[135px]" href="index.html">Emergency <br> Service</a>
             </div>
             <div class="flex items-center max-w-[400px] gap-6">
                 <div
                     class="max-w-[124px] max-h-14 flex items-center justify-between bg-[#41FF6B] opacity-50 rounded-2xl gap-4">
                     <a href="index.html"><a href="index.html" class="text-bolder text-3xl">0</a><img
-                            src="/assets/heart.png" alt="heart icon" class="max-h-[30px] max-w-[30px]">
+                            src="./assets/heart.png" alt="heart icon" class="max-h-[30px] max-w-[30px]">
                 </div>
                 <div
                     class="max-w-[124px] max-h-14 flex items-center justify-between bg-[#41FF6B] opacity-50 rounded-2xl gap-4">
-                    <a href="index.html" class="text-bolder text-3xl" </a>100</a><img src="/assets/coin.png"
+                    <a href="./index.html" class="text-bolder text-3xl" </a>100</a><img src="./assets/coin.png"
                         alt="coin icon" class="max-h-6 max-w-6">
                 </div>
                 <a class=" max-h-14 flex items-center justify-between bg-[#00A63E] rounded-2xl gap-4 text-3xl text-white"
-                    href="index.html">
+                    href="./index.html">
                     2 Copy
                 </a>
 
             </div>
         </nav>
         <div class="grid justify-center items-center bg-[#067e5adf] text-center mb-20">
-            <img src="/assets/logo.png" alt="logo image" class="mx-auto">
+            <img src="./assets/logo.png" alt="logo image" class="mx-auto">
 
             <p class="hind-madurai-bold text-white">Emergency Service Directory</p>
             <p class="hind-madurai-semibold text-white">Government Emergency Services at Your Fingertip – A Project by
@@ -46,77 +46,44 @@
     <main>
         <section>
             <section class="cardSection">
-                <div class="card mb-4">
-                    <div class="divInfo flex justify-between items-center">
-                        <img src="assets/emergency.png" alt="Service 1" class="max-w-[60px] max-h-[60px]">
-                        <img src="assets/heart (1).png" alt="whiteHeart" class="max-w-[24px] max-h-[24px]">
-                    </div>
-                    <div>
-                        <p class="hind-madurai-bold">National Emergency Number</p>
-                        <p class="roboto-semi">National Emergency</p>
-                    </div>
-                    <div>
-                        <p class="bolder text-3xl">999</p>
-                        <a class="rounded-[9999px] text-gray-400">All</a>
-                    </div>
-                    <div>
-                        <button>Copy</button><button>Call</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 2">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 3">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 4">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 5">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 6">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 7">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 8">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
-                <div class="card">
-                    <img src="" alt="Service 9">
-                    <p></p>
-                    <p></p>
-                    <button></button><button></button>
-                </div>
+             <div class="card mb-4 p-6 rounded-2xl bg-white shadow-lg flex items-center gap-6" 
+         data-name="National Emergency" data-number="+880123456789">/* Card Container  used data-name and data-number for future js implementation*/
+  <div class="divInfo flex items-center gap-4">
+    <img src="./assets/emergency.png" alt="National Emergency icon" class="w-14 h-14">
+    <button class="heart-btn p-2" aria-label="Like National Emergency" aria-pressed="false">
+      <img src="./assets/heart-white.png" alt="" aria-hidden="true" class="w-6 h-6">
+    </button>
+  </div>
 
-            </section>
-            <section class="callHistorySection">
+  <div class="flex-1 min-w-0">
+    <p class="hind-madurai-bold text-lg">National Emergency Number</p>
+    <p class="roboto-semi text-sm text-gray-600">National Emergency</p>
+  </div>
 
+  <div class="text-right">
+    <p class="bolder text-3xl">999</p>
+    <span class="badge inline-block rounded-full px-3 py-1 text-sm text-gray-500">All</span>
+  </div>
+
+  <div class="actions flex items-center gap-3">
+    <button class="copy-btn flex items-center gap-2" data-number="+880123456789" aria-label="Copy 999">
+      <img src="./assets/copy.png" alt="" aria-hidden="true" class="w-6 h-6">
+      <span>Copy</span>
+    </button>
+
+    <button class="call-btn flex items-center gap-2 bg-green-700 text-white px-3 py-2 rounded"
+            data-number="+880123456789" data-name="National Emergency"
+            aria-label="Call National Emergency at 999">
+      <img src="./assets/call.png" alt="" aria-hidden="true" class="w-6 h-6">
+      <span>Call</span>
+    </button>
+  </div>
+</div>
+
+                <section class="callHistorySection">
+
+                </section>
             </section>
-        </section>
 
     </main>
     <footer>
