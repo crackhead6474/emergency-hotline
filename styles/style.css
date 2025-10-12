@@ -36,3 +36,12 @@
   font-variation-settings:
     "wdth" 100;
 }
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 18px;
+  font-style: normal;
+  color: aliceblue;
+  font-variation-settings:
+    "wdth" 100;
+}
